@@ -99,7 +99,7 @@ def Loop_Game(): # creating a function for game.
         snake__(snakeblock, snake_list)
         pygame.display.update()
         if x_1 == food_X and y_1 == food_Y:
-            food_X = round(random.randrange(0, disply_width - snakeblock)/ 10.0) * 10.0
+            food_X = round(random.randrange(0, disply_width - snakeblock)/ 10.0) * 10.0   # using random libs cuz of we assign that the food will appear somewhere in the area randomly.
             food_Y = round(random.randrange(0, disply_height - snakeblock)/ 10.0)* 10.0
             length__ += 1                    #If we eats, our snake will grow up.
              
